@@ -1,14 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegraph Uploader</title>
 </head>
 <body>
+    <h1>Telegraph</h1>
     <form action="https://telegraph.zorner.men/upload" method="post" enctype="multipart/form-data" target="_blank">
         <input type="file" name="images" accept="image/*" required>
         <button type="submit">Upload</button>
-    </form>
+    </form><h1>Pixhost</h1>
+<form action="https://api.pixhost.to/images" method="post" enctype="multipart/form-data" target="_blank">
+    <input type="file" name="img" accept="image/*" required>
+    <input type="hidden" name="content_type" value="0">
+    <input type="hidden" name="max_th_size" value="420">
+    <button type="submit">Upload</button>
+</form>
+
 </body>
 </html>
